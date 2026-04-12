@@ -32,11 +32,11 @@ const Header: React.FC = () => {
       <div className="header-container">
         <div className="logo">PORTFOLIO</div>
         <nav className={`nav ${isMenuOpen ? 'active' : ''}`}>
-          <a onClick={() => scrollToSection('hero')}>{t.nav.home}</a>
-          <a onClick={() => scrollToSection('about')}>{t.nav.about}</a>
-          <a onClick={() => scrollToSection('skills')}>{t.nav.skills}</a>
-          <a onClick={() => scrollToSection('projects')}>{t.nav.projects}</a>
-          <a onClick={() => scrollToSection('contact')}>{t.nav.contact}</a>
+          <a href="#hero" onClick={() => scrollToSection('hero')}>{t.nav.home}</a>
+          <a href="#about" onClick={() => scrollToSection('about')}>{t.nav.about}</a>
+          <a href="#skills" onClick={() => scrollToSection('skills')}>{t.nav.skills}</a>
+          <a href="#projects" onClick={() => scrollToSection('projects')}>{t.nav.projects}</a>
+          <a href="#contact" onClick={() => scrollToSection('contact')}>{t.nav.contact}</a>
         </nav>
         <div className="language-switcher">
           <button
