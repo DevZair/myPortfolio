@@ -1,0 +1,133 @@
+.header {
+  background: transparent;
+  color: white;
+  padding: 1.5rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: background 0.3s;
+}
+
+.header.scrolled {
+  background: rgba(6, 6, 6, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(243, 243, 236, 0.1);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav {
+  display: flex;
+  gap: 3rem;
+}
+
+.nav a {
+  color: #f3f3ec;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  opacity: 0.7;
+}
+
+.nav a:hover {
+  opacity: 1;
+  color: #030bff;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 2px;
+  background-color: white;
+  transition: 0.25s ease-in-out;
+}
+
+.language-switcher {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.language-switcher button {
+  padding: 0.5rem 1.2rem;
+  background-color: transparent;
+  color: #f3f3ec;
+  border: 1px solid rgba(243, 243, 236, 0.2);
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 400;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.language-switcher button.active {
+  background: #030bff;
+  border-color: #030bff;
+  color: #fff;
+}
+
+.language-switcher button:hover {
+  border-color: #030bff;
+  color: #030bff;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    flex-direction: column;
+    background-color: rgba(6, 6, 6, 0.98);
+    width: 250px;
+    padding: 2rem;
+    transition: right 0.3s;
+    border-left: 1px solid rgba(243, 243, 236, 0.1);
+    gap: 1.5rem;
+  }
+
+  .nav.active {
+    right: 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .language-switcher {
+    position: absolute;
+    top: 20px;
+    right: 60px;
+  }
+
+  .language-switcher button {
+    padding: 0.4rem 0.8rem;
+    font-size: 9px;
+  }
+}
