@@ -190,53 +190,55 @@
 
 @media (max-width: 768px) {
   .projects {
-    padding: 3rem 1rem;
+    padding: 3rem 0.5rem;
   }
 
   .projects-grid {
-    gap: 1.5rem;
-    scroll-padding: 0 calc(50% - 150px);
+    gap: 1rem;
+    padding: 0 1rem;
   }
 
   .project-card {
-    min-width: 300px;
-    max-width: 300px;
+    min-width: 260px;
+    max-width: 260px;
     scroll-snap-align: center;
+    border: none;
   }
 
   .project-image {
-    height: 380px;
-    padding: 2rem;
+    height: 320px;
+    padding: 1.5rem;
+    border-bottom: none;
   }
 
   .iphone-frame {
-    width: 190px;
-    height: 380px;
+    width: 160px;
+    height: 320px;
   }
 
   .project-content {
-    padding: 1.8rem;
+    padding: 1.5rem;
   }
 
   .project-content h3 {
-    font-size: 17px;
-    margin-bottom: 1rem;
+    font-size: 15px;
+    margin-bottom: 0.8rem;
   }
 
   .project-content p {
-    font-size: 12px;
-    margin-bottom: 1.2rem;
-    line-height: 1.6;
+    font-size: 11px;
+    margin-bottom: 1rem;
+    line-height: 1.5;
   }
 
   .tag {
-    font-size: 10px;
-    padding: 0.4rem 1rem;
+    font-size: 9px;
+    padding: 0.3rem 0.8rem;
   }
 
   .scroll-btn {
-    width: 45px;
-    height: 45px;
-    font-size: 1.1rem;
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
   }
 }
