@@ -18,10 +18,22 @@ const Projects: React.FC = () => {
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
       const scrollAmount = 420;
-      scrollRef.current.scrollBy({
-        left: direction === 'left' ? -scrollAmount : scrollAmount,
-        behavior: 'smooth'
-      });
+      const container = scrollRef.current;
+      const maxScroll = container.scrollWidth - container.clientWidth;
+
+      if (direction === 'right') {
+        const newPosition = container.scrollLeft + scrollAmount;
+        container.scrollTo({
+          left: Math.min(newPosition, maxScroll),
+          behavior: 'smooth'
+        });
+      } else {
+        const newPosition = container.scrollLeft - scrollAmount;
+        container.scrollTo({
+          left: Math.max(newPosition, 0),
+          behavior: 'smooth'
+        });
+      }
     }
   };
 
