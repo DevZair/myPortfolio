@@ -59,19 +59,19 @@
 
 @media (max-width: 768px) {
   .skills-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .skill-item {
-    padding: 2rem 1.5rem;
+    padding: 1.5rem 1rem;
   }
 
   .skill-name,
   .skill-percentage {
-    font-size: 13px;
+    font-size: 11px;
   }
 
   .skill-bar {
-    height: 3px;
+    height: 2px;
   }
 }
