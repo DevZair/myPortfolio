@@ -189,9 +189,42 @@
 }
 
 @media (max-width: 768px) {
+  .projects {
+    padding: 3rem 1rem;
+  }
+
   .project-card {
-    min-width: 320px;
-    max-width: 320px;
+    min-width: 280px;
+    max-width: 280px;
+  }
+
+  .project-image {
+    height: 350px;
+    padding: 1.5rem;
+  }
+
+  .iphone-frame {
+    width: 180px;
+    height: 360px;
+  }
+
+  .project-content {
+    padding: 1.5rem;
+  }
+
+  .project-content h3 {
+    font-size: 16px;
+    margin-bottom: 0.8rem;
+  }
+
+  .project-content p {
+    font-size: 11px;
+    margin-bottom: 1rem;
+  }
+
+  .tag {
+    font-size: 9px;
+    padding: 0.3rem 0.8rem;
   }
 
   .scroll-btn {

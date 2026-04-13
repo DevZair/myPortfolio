@@ -138,8 +138,25 @@
 }
 
 @media (max-width: 768px) {
+  .contact {
+    padding: 3rem 1rem;
+  }
+
   .contact-info {
     grid-template-columns: 1fr;
+  }
+
+  .contact-item {
+    padding: 2rem 1.5rem;
+  }
+
+  .contact-item h3 {
+    font-size: 12px;
+  }
+
+  .contact-item p,
+  .contact-item a {
+    font-size: 11px;
   }
 
   .contact-form {
