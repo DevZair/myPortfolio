@@ -63,11 +63,15 @@
   }
 
   .skill-item {
-    padding: 1.5rem;
+    padding: 2rem 1.5rem;
   }
 
   .skill-name,
   .skill-percentage {
-    font-size: 12px;
+    font-size: 13px;
+  }
+
+  .skill-bar {
+    height: 3px;
   }
 }

@@ -194,42 +194,43 @@
   }
 
   .project-card {
-    min-width: 280px;
-    max-width: 280px;
+    min-width: 300px;
+    max-width: 300px;
   }
 
   .project-image {
-    height: 350px;
-    padding: 1.5rem;
+    height: 380px;
+    padding: 2rem;
   }
 
   .iphone-frame {
-    width: 180px;
-    height: 360px;
+    width: 190px;
+    height: 380px;
   }
 
   .project-content {
-    padding: 1.5rem;
+    padding: 1.8rem;
   }
 
   .project-content h3 {
-    font-size: 16px;
-    margin-bottom: 0.8rem;
-  }
-
-  .project-content p {
-    font-size: 11px;
+    font-size: 17px;
     margin-bottom: 1rem;
   }
 
+  .project-content p {
+    font-size: 12px;
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+  }
+
   .tag {
-    font-size: 9px;
-    padding: 0.3rem 0.8rem;
+    font-size: 10px;
+    padding: 0.4rem 1rem;
   }
 
   .scroll-btn {
-    width: 40px;
-    height: 40px;
-    font-size: 1rem;
+    width: 45px;
+    height: 45px;
+    font-size: 1.1rem;
   }
 }

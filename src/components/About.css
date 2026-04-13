@@ -64,12 +64,13 @@
 
   .about-content {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 2.5rem;
   }
 
   .about-text p {
-    font-size: 12px;
-    margin-bottom: 1rem;
+    font-size: 13px;
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
   }
 
   .about-stats {
@@ -77,14 +78,14 @@
   }
 
   .stat-item {
-    padding: 2rem 1.5rem;
+    padding: 2.5rem 1.5rem;
   }
 
   .stat-item h3 {
-    font-size: 36px;
+    font-size: 48px;
   }
 
   .stat-item p {
-    font-size: 9px;
+    font-size: 11px;
   }
 }

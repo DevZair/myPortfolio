@@ -43,8 +43,8 @@ h2::after {
   }
 
   h2 {
-    font-size: 28px;
-    margin-bottom: 40px;
-    letter-spacing: -0.3px;
+    font-size: 32px;
+    margin-bottom: 50px;
+    letter-spacing: -0.5px;
   }
 }
